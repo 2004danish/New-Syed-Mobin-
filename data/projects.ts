@@ -17,7 +17,11 @@ export const projectsArchive = [
       "/projects/agrawal-house/2.jpg",
       "/projects/agrawal-house/3.jpg",
       "/projects/agrawal-house/4.jpg",
-      "/projects/agrawal-house/5.jpg"
+      "/projects/agrawal-house/5.jpg",
+      "/projects/agrawal-house/6.jpg",
+      "/projects/agrawal-house/7.jpg",
+      "/projects/agrawal-house/8.jpg",
+      "/projects/agrawal-house/9.jpg"
     ] 
   },
   { 
@@ -69,7 +73,16 @@ export const projectsArchive = [
       "/projects/arjun-farms/1.jpg",
       "/projects/arjun-farms/2.jpg",
       "/projects/arjun-farms/3.jpg",
-      "/projects/arjun-farms/4.jpg"
+      "/projects/arjun-farms/4.jpg",
+      "/projects/arjun-farms/5.jpg",
+      "/projects/arjun-farms/6.jpg",
+      "/projects/arjun-farms/7.jpg",
+      "/projects/arjun-farms/8.jpg",
+      "/projects/arjun-farms/9.jpg",
+      "/projects/arjun-farms/10.jpg",
+      "/projects/arjun-farms/11.jpg",
+      "/projects/arjun-farms/12.jpg",
+      "/projects/arjun-farms/13.jpg"
     ]
   },
   { 
@@ -86,7 +99,22 @@ export const projectsArchive = [
     gallery: [
       "/projects/bhumi-vista/1.jpg",
       "/projects/bhumi-vista/2.jpg",
-      "/projects/bhumi-vista/3.jpg"
+      "/projects/bhumi-vista/3.jpg",
+      "/projects/bhumi-vista/4.jpg",
+      "/projects/bhumi-vista/5.jpg",
+      "/projects/bhumi-vista/6.jpg",
+      "/projects/bhumi-vista/7.jpg",
+      "/projects/bhumi-vista/8.jpg",
+      "/projects/bhumi-vista/9.jpg",
+      "/projects/bhumi-vista/10.jpg",
+      "/projects/bhumi-vista/11.jpg",
+      "/projects/bhumi-vista/12.jpg",
+      "/projects/bhumi-vista/13.jpg",
+      "/projects/bhumi-vista/14.jpg",
+      "/projects/bhumi-vista/15.jpg",
+      "/projects/bhumi-vista/16.jpg",
+      "/projects/bhumi-vista/17.jpg",
+      "/projects/bhumi-vista/18.jpg"
     ]
   },
   { 
@@ -102,8 +130,7 @@ export const projectsArchive = [
     hero: "/projects/darul-uloom-educational-campus/hero.jpg",
     gallery: [
       "/projects/darul-uloom-educational-campus/1.jpg",
-      "/projects/darul-uloom-educational-campus/2.jpg",
-      "/projects/darul-uloom-educational-campus/3.jpg"
+      "/projects/darul-uloom-educational-campus/2.jpg"
     ]
   },
   { 
@@ -121,7 +148,11 @@ export const projectsArchive = [
       "/projects/dnr-house/1.jpg",
       "/projects/dnr-house/2.jpg",
       "/projects/dnr-house/3.jpg",
-      "/projects/dnr-house/4.jpg"
+      "/projects/dnr-house/4.jpg",
+      "/projects/dnr-house/5.jpg",
+      "/projects/dnr-house/6.jpg",
+      "/projects/dnr-house/7.jpg",
+      "/projects/dnr-house/8.jpg"
     ]
   },
   { 
@@ -138,7 +169,15 @@ export const projectsArchive = [
     gallery: [
       "/projects/galaxy-imperia/1.jpg",
       "/projects/galaxy-imperia/2.jpg",
-      "/projects/galaxy-imperia/3.jpg"
+      "/projects/galaxy-imperia/3.jpg",
+      "/projects/galaxy-imperia/4.jpg",
+      "/projects/galaxy-imperia/5.jpg",
+      "/projects/galaxy-imperia/6.jpg",
+      "/projects/galaxy-imperia/7.jpg",
+      "/projects/galaxy-imperia/8.jpg",
+      "/projects/galaxy-imperia/9.jpg",
+      "/projects/galaxy-imperia/10.jpg",
+      "/projects/galaxy-imperia/11.jpg"
     ]
   },
   { 
@@ -153,11 +192,7 @@ export const projectsArchive = [
     thumbnail: "/projects/green-edifice/thumbnail.jpg",
     hero: "/projects/green-edifice/hero.jpg",
     gallery: [
-      "/projects/green-edifice/1.jpg",
-      "/projects/green-edifice/2.jpg",
-      "/projects/green-edifice/3.jpg",
-      "/projects/green-edifice/4.jpg",
-      "/projects/green-edifice/5.jpg"
+      "/projects/green-edifice/1.jpg"
     ]
   },
   { 
@@ -172,12 +207,7 @@ export const projectsArchive = [
     thumbnail: "/projects/hk-elite/thumbnail.jpg",
     hero: "/projects/hk-elite/hero.jpg",
     gallery: [
-      "/projects/hk-elite/1.jpg",
-      "/projects/hk-elite/2.jpg",
-      "/projects/hk-elite/3.jpg",
-      "/projects/hk-elite/4.jpg",
-      "/projects/hk-elite/5.jpg",
-      "/projects/hk-elite/6.jpg"
+      "/projects/hk-elite/1.jpg"
     ]
   },
   { 
@@ -212,9 +242,6 @@ export const projectsArchive = [
       "/projects/jamna-palace/3.jpg",
       "/projects/jamna-palace/4.jpg",
       "/projects/jamna-palace/5.jpg",
-      "/projects/jamna-palace/6.jpg",
-      "/projects/jamna-palace/7.jpg",
-      "/projects/jamna-palace/8.jpg",
       "/projects/jamna-palace/9.jpg",
       "/projects/jamna-palace/10.jpg",
       "/projects/jamna-palace/11.jpg",
@@ -235,10 +262,28 @@ export const projectsArchive = [
     thumbnail: "/projects/kala-villa/thumbnail.jpg",
     hero: "/projects/kala-villa/hero.jpg",
     gallery: [
+      "/projects/kala-villa/1.jpg",
+      "/projects/kala-villa/2.jpg",
+      "/projects/kala-villa/3.jpg",
       "/projects/kala-villa/4.jpg",
       "/projects/kala-villa/5.jpg",
       "/projects/kala-villa/6.jpg",
-      "/projects/kala-villa/7.jpg"
+      "/projects/kala-villa/7.jpg",
+      "/projects/kala-villa/8.jpg",
+      "/projects/kala-villa/9.jpg",
+      "/projects/kala-villa/10.jpg",
+      "/projects/kala-villa/11.jpg",
+      "/projects/kala-villa/12.jpg",
+      "/projects/kala-villa/13.jpg",
+      "/projects/kala-villa/14.jpg",
+      "/projects/kala-villa/15.jpg",
+      "/projects/kala-villa/16.jpg",
+      "/projects/kala-villa/17.jpg",
+      "/projects/kala-villa/18.jpg",
+      "/projects/kala-villa/19.jpg",
+      "/projects/kala-villa/20.jpg",
+      "/projects/kala-villa/21.jpg",
+      "/projects/kala-villa/22.jpg"
     ]
   },
   { 
@@ -269,8 +314,7 @@ export const projectsArchive = [
     thumbnail: "/projects/kukreja-head-office/thumbnail.jpg",
     hero: "/projects/kukreja-head-office/hero.jpg",
     gallery: [
-      "/projects/kukreja-head-office/1.jpg",
-      "/projects/kukreja-head-office/2.jpg"
+      "/projects/kukreja-head-office/1.jpg"
     ]
   },
   { 
@@ -286,7 +330,27 @@ export const projectsArchive = [
     hero: "/projects/kukreja-oms/hero.jpg",
     gallery: [
       "/projects/kukreja-oms/1.jpg",
-      "/projects/kukreja-oms/2.jpg"
+      "/projects/kukreja-oms/2.jpg",
+      "/projects/kukreja-oms/3.jpg",
+      "/projects/kukreja-oms/4.jpg",
+      "/projects/kukreja-oms/5.jpg",
+      "/projects/kukreja-oms/6.jpg",
+      "/projects/kukreja-oms/7.jpg",
+      "/projects/kukreja-oms/8.jpg",
+      "/projects/kukreja-oms/9.jpg",
+      "/projects/kukreja-oms/10.jpg",
+      "/projects/kukreja-oms/11.jpg",
+      "/projects/kukreja-oms/12.jpg",
+      "/projects/kukreja-oms/13.jpg",
+      "/projects/kukreja-oms/14.jpg",
+      "/projects/kukreja-oms/15.jpg",
+      "/projects/kukreja-oms/16.jpg",
+      "/projects/kukreja-oms/17.jpg",
+      "/projects/kukreja-oms/18.jpg",
+      "/projects/kukreja-oms/19.jpg",
+      "/projects/kukreja-oms/20.jpg",
+      "/projects/kukreja-oms/21.jpg",
+      "/projects/kukreja-oms/22.jpg"
     ]
   },
   { 
@@ -302,7 +366,11 @@ export const projectsArchive = [
     hero: "/projects/kukreja-suncity/hero.jpg",
     gallery: [
       "/projects/kukreja-suncity/1.jpg",
-      "/projects/kukreja-suncity/2.jpg"
+      "/projects/kukreja-suncity/2.jpg",
+      "/projects/kukreja-suncity/3.jpg",
+      "/projects/kukreja-suncity/4.jpg",
+      "/projects/kukreja-suncity/5.jpg",
+      "/projects/kukreja-suncity/6.jpg"
     ]
   },
   { 
@@ -317,8 +385,7 @@ export const projectsArchive = [
     thumbnail: "/projects/kumar-house/thumbnail.jpg",
     hero: "/projects/kumar-house/hero.jpg",
     gallery: [
-      "/projects/kumar-house/1.jpg",
-      "/projects/kumar-house/2.jpg"
+      "/projects/kumar-house/1.jpg"
     ]
   },
   { 
@@ -334,7 +401,8 @@ export const projectsArchive = [
     hero: "/projects/laxmi-coral/hero.jpg",
     gallery: [
       "/projects/laxmi-coral/1.jpg",
-      "/projects/laxmi-coral/2.jpg"
+      "/projects/laxmi-coral/2.jpg",
+      "/projects/laxmi-coral/3.jpg"
     ]
   },
   { 
@@ -366,7 +434,12 @@ export const projectsArchive = [
     hero: "/projects/meghdoot-enclave/hero.jpg",
     gallery: [
       "/projects/meghdoot-enclave/1.jpg",
-      "/projects/meghdoot-enclave/2.jpg"
+      "/projects/meghdoot-enclave/2.jpg",
+      "/projects/meghdoot-enclave/3.jpg",
+      "/projects/meghdoot-enclave/4.jpg",
+      "/projects/meghdoot-enclave/5.jpg",
+      "/projects/meghdoot-enclave/6.jpg",
+      "/projects/meghdoot-enclave/7.jpg"
     ]
   },
   { 
@@ -380,10 +453,7 @@ export const projectsArchive = [
     heroStyle: "cinematic",
     thumbnail: "/projects/ms-associates/thumbnail.jpg",
     hero: "/projects/ms-associates/hero.jpg",
-    gallery: [
-      "/projects/ms-associates/1.jpg",
-      "/projects/ms-associates/2.jpg"
-    ]
+    gallery: []
   },
   { 
     id: "oak-sterling-vista", 
@@ -414,7 +484,19 @@ export const projectsArchive = [
     hero: "/projects/pandey-house/hero.jpg",
     gallery: [
       "/projects/pandey-house/1.jpg",
-      "/projects/pandey-house/2.jpg"
+      "/projects/pandey-house/2.jpg",
+      "/projects/pandey-house/3.jpg",
+      "/projects/pandey-house/4.jpg",
+      "/projects/pandey-house/5.jpg",
+      "/projects/pandey-house/6.jpg",
+      "/projects/pandey-house/7.jpg",
+      "/projects/pandey-house/8.jpg",
+      "/projects/pandey-house/9.jpg",
+      "/projects/pandey-house/10.jpg",
+      "/projects/pandey-house/11.jpg",
+      "/projects/pandey-house/12.jpg",
+      "/projects/pandey-house/13.jpg",
+      "/projects/pandey-house/14.jpg"
     ]
   },
   { 
@@ -429,8 +511,7 @@ export const projectsArchive = [
     thumbnail: "/projects/patel-house/thumbnail.jpg",
     hero: "/projects/patel-house/hero.jpg",
     gallery: [
-      "/projects/patel-house/1.jpg",
-      "/projects/patel-house/2.jpg"
+      "/projects/patel-house/1.jpg"
     ]
   },
   { 
@@ -477,8 +558,7 @@ export const projectsArchive = [
     thumbnail: "/projects/wanjari-house/thumbnail.jpg",
     hero: "/projects/wanjari-house/hero.jpg",
     gallery: [
-      "/projects/wanjari-house/1.jpg",
-      "/projects/wanjari-house/2.jpg"
+      "/projects/wanjari-house/1.jpg"
     ]
   }
 ];
