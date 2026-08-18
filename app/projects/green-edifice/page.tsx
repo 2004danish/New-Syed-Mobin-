@@ -14,6 +14,7 @@ export default function GreenEdificePage() {
         title={project.name}
         metadata={{ location: project.location, typology: project.category, scale: project.scale, year: project.year, status: project.status }}
         heroImage={project.hero}
+        isTallImage={true} /* <--- Activates the cinematic drone pan! */
       />
       <ProjectGallery images={project.gallery} /> 
     </main>
