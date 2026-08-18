@@ -1,49 +1,37 @@
-import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
-import "./globals.css";
-import Navbar from "./compositions/Navbar";
-import Footer from "./compositions/Footer"; 
-import Preloader from "./compositions/Preloader";
+@import "tailwindcss";
 
-// Load premium fonts
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
 
-export const metadata: Metadata = {
-  title: "Syed Mobin Architects | Architectural Firm",
-  description: "Visionary architecture and design by Syed Mobin Architects.",
-};
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable} scroll-smooth`}>
-      <body className="font-sans antialiased bg-[#F7F7F5] text-black min-h-screen flex flex-col">
-        
-        {/* =========================================
-            GLOBAL IMAGE ANTI-RIGHT-CLICK SCRIPT
-            This specifically targets <img> tags and blocks the menu.
-        ========================================= */}
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            document.addEventListener('contextmenu', function(e) {
-              if (e.target.nodeName === 'IMG') {
-                e.preventDefault();
-              }
-            });
-          `
-        }} />
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
 
-        <Preloader />
-        <Navbar />
-        <div className="flex-grow">
-          {children}
-        </div>
-        <Footer />
-      </body>
-    </html>
-  );
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+   ANTI-THEFT IMAGE SHIELD
+   Strict, Turbopack-safe version
+*/
+img {
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
