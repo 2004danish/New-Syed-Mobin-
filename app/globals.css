@@ -34,4 +34,5 @@ img {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   user-select: none;
+  pointer-events: none; /* THE ULTIMATE DESKTOP RIGHT-CLICK SHIELD */
 }
