@@ -24,7 +24,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Projects", href: "/projects" },
-    { name: "Studio", href: "/#studio" },
+    { name: "Studio", href: "/studio" }, /* <--- Removed the hashtag here! */
     { name: "Expertise", href: "/#expertise" },
     { name: "Contact", href: "/#contact" },
   ];
