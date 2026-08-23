@@ -16,9 +16,17 @@ interface ProjectMastheadProps {
   };
   heroImage: string;
   isTallImage?: boolean; 
+  isWideImage?: boolean; 
 }
 
-export default function ProjectMasthead({ title, id, metadata, heroImage, isTallImage = false }: ProjectMastheadProps) {
+export default function ProjectMasthead({ 
+  title, 
+  id, 
+  metadata, 
+  heroImage, 
+  isTallImage = false,
+  isWideImage = false 
+}: ProjectMastheadProps) {
   const ease = [0.16, 1, 0.3, 1] as const;
   
   const containerRef = useRef(null);
@@ -28,18 +36,33 @@ export default function ProjectMasthead({ title, id, metadata, heroImage, isTall
   });
   
   const imageY = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
+  
+  // Controls the pause/play state strictly on click
   const [isPaused, setIsPaused] = useState(false);
+
+  const isAnimated = isTallImage || isWideImage;
+  const animationClass = isTallImage ? "animate-pan-vertical" : "animate-pan-horizontal";
 
   return (
     <section className="pt-32 md:pt-48 pb-12 bg-white text-black relative z-10 overflow-hidden">
       
       <style>{`
-        @keyframes panObject {
-          0% { object-position: 50% 0%; }
-          100% { object-position: 50% 100%; }
+        /* VERTICAL: Starts exactly at the Bottom (100%), glides to Top (0%) */
+        @keyframes panVert {
+          0% { object-position: 50% 100%; }
+          100% { object-position: 50% 0%; }
         }
-        .animate-pan {
-          animation: panObject 12s ease-in-out infinite alternate;
+        .animate-pan-vertical {
+          animation: panVert 24s ease-out forwards;
+        }
+
+        /* HORIZONTAL: Starts exactly at the Left (0%), glides to Right (100%) */
+        @keyframes panHoriz {
+          0% { object-position: 0% 50%; }
+          100% { object-position: 100% 50%; }
+        }
+        .animate-pan-horizontal {
+          animation: panHoriz 24s ease-out forwards;
         }
       `}</style>
 
@@ -73,23 +96,25 @@ export default function ProjectMasthead({ title, id, metadata, heroImage, isTall
           transition={{ duration: 1.6, delay: 0.4, ease }}
           className="w-full h-[60vh] md:h-[85vh] relative overflow-hidden bg-black/5"
         >
-          {!isTallImage ? (
+          {!isAnimated ? (
             <motion.div style={{ y: imageY }} className="absolute inset-0 w-full h-[120%] origin-top">
               <Image src={heroImage} alt={`${title} Architecture`} fill priority quality={90} className="object-cover" />
             </motion.div>
           ) : (
             <div className="absolute inset-0 w-full h-full">
+              
+              {/* Clean, native Next.js Image with pure CSS handling the animation */}
               <Image
                 src={heroImage}
                 alt={`${title} Architecture`}
                 fill
                 priority
                 quality={90}
-                className="object-cover animate-pan"
+                className={`object-cover ${animationClass}`}
                 style={{ animationPlayState: isPaused ? "paused" : "running" }}
               />
               
-              {/* THE FIX: A completely invisible button sitting on top of the image to catch 100% of touches */}
+              {/* Invisible Click Overlay for Pausing */}
               <button 
                 className="absolute inset-0 w-full h-full z-10 cursor-pointer bg-transparent border-none outline-none appearance-none"
                 onClick={() => setIsPaused(!isPaused)}

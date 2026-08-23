@@ -14,6 +14,7 @@ export default function DNRHousePage() {
         title={project.name}
         metadata={{ location: project.location, typology: project.category, scale: project.scale, year: project.year, status: project.status }}
         heroImage={project.hero}
+        isWideImage={true} /* <--- This triggers the horizontal left-to-right animation! */
       />
       <ProjectGallery images={project.gallery} /> 
     </main>
