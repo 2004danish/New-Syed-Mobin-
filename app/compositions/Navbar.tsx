@@ -1,10 +1,14 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+  
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -24,11 +28,15 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Projects", href: "/projects" },
-    { name: "Studio", href: "/studio" }, /* <--- Removed the hashtag here! */
-    { name: "Expertise", href: "/#expertise" },
-    { name: "Contact", href: "/#contact" },
+    { name: "Expertise", href: "/expertise" },
+    { name: "Studio", href: "/studio" },
+    { name: "Contact", href: "/contact" },
   ];
-  const architecturalEase = [0.16, 1, 0.3, 1];
+
+  // Adding "as const" fixes the TypeScript error for Framer Motion
+  const architecturalEase = [0.16, 1, 0.3, 1] as const;
+
+  const showDarkText = isScrolled || isMobileMenuOpen || !isHome;
 
   return (
     <>
@@ -42,30 +50,26 @@ export default function Navbar() {
       >
         <div className="max-w-[1600px] mx-auto px-6 md:px-12 flex justify-between items-center">
           
-          {/* BRANDING SECTION: Larger Logo + Optically Aligned Text */}
+          {/* BRANDING SECTION */}
           <Link href="/" className="relative z-50 flex items-center gap-3 md:gap-4 group">
-            
-            {/* Logo Image - Increased Size */}
             <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center flex-shrink-0">
               <img 
                 src="/syedmobinlogo.png" 
                 alt="Syed Mobin Architects Logo" 
                 className={`w-full h-full object-contain transition-all duration-500 ${
-                  isScrolled || isMobileMenuOpen ? "filter-none" : "invert brightness-0"
+                  showDarkText ? "filter-none" : "invert brightness-0"
                 }`}
               />
             </div>
 
-            {/* Typography - Optically nudge down by 2px to balance the circular logo */}
             <div className="flex flex-col justify-center translate-y-[2px]">
-              <span className={`text-xl md:text-2xl font-bold tracking-[0.15em] uppercase leading-none transition-colors duration-500 serif ${isScrolled || isMobileMenuOpen ? "text-black" : "text-white"}`}>
+              <span className={`text-xl md:text-2xl font-bold tracking-[0.15em] uppercase leading-none transition-colors duration-500 serif ${showDarkText ? "text-black" : "text-white"}`}>
                 Syed Mobin
               </span>
-              <span className={`text-[9px] md:text-[10px] font-medium tracking-[0.3em] uppercase mt-1.5 transition-colors duration-500 ${isScrolled || isMobileMenuOpen ? "text-gray-500" : "text-white/70"}`}>
+              <span className={`text-[9px] md:text-[10px] font-medium tracking-[0.3em] uppercase mt-1.5 transition-colors duration-500 ${showDarkText ? "text-gray-500" : "text-white/70"}`}>
                 Architects
               </span>
             </div>
-            
           </Link>
 
           {/* DESKTOP NAVIGATION */}
@@ -74,7 +78,9 @@ export default function Navbar() {
               <Link 
                 key={link.name} 
                 href={link.href}
-                className={`text-xs font-semibold uppercase tracking-[0.15em] relative group overflow-hidden transition-colors duration-500 ${isScrolled ? "text-black hover:text-gray-500" : "text-white hover:text-gray-300"}`}
+                className={`text-xs font-semibold uppercase tracking-[0.15em] relative group overflow-hidden transition-colors duration-500 ${
+                  showDarkText ? "text-black hover:text-gray-500" : "text-white hover:text-gray-300"
+                }`}
               >
                 {link.name}
                 <span className="absolute left-0 bottom-0 w-full h-[1px] bg-current transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 architectural" style={{ transitionTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)'}} />
@@ -88,7 +94,11 @@ export default function Navbar() {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle Menu"
           >
-            {isMobileMenuOpen ? <X className="text-black" size={28} strokeWidth={1} /> : <Menu className={isScrolled ? "text-black" : "text-white"} size={28} strokeWidth={1} />}
+            {isMobileMenuOpen ? (
+              <X className="text-black" size={28} strokeWidth={1} />
+            ) : (
+              <Menu className={showDarkText ? "text-black" : "text-white"} size={28} strokeWidth={1} />
+            )}
           </button>
         </div>
       </motion.nav>
