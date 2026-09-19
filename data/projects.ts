@@ -63,8 +63,7 @@ export const projectsArchive = [
     gallery: [
       "/projects/galaxy-imperia/1.jpg", "/projects/galaxy-imperia/2.jpg", "/projects/galaxy-imperia/3.jpg",
       "/projects/galaxy-imperia/4.jpg", "/projects/galaxy-imperia/5.jpg", "/projects/galaxy-imperia/6.jpg",
-      "/projects/galaxy-imperia/7.jpg", "/projects/galaxy-imperia/8.jpg", "/projects/galaxy-imperia/9.jpg",
-      
+      "/projects/galaxy-imperia/7.jpg", "/projects/galaxy-imperia/8.jpg", "/projects/galaxy-imperia/9.jpg"
     ]
   },
   { 
@@ -451,10 +450,6 @@ export const projectsArchive = [
       "/projects/wanjari-house/1.jpg"
     ]
   },
-  
-  /* ========================================================
-     YOUR 4 NEW PROJECTS (HARDCODED EXACTLY TO FILES)
-  ======================================================== */
   { 
     id: "maitreya-orange-park-iii", 
     name: "Maitreya Orange Park III", 
@@ -501,7 +496,7 @@ export const projectsArchive = [
     gallery: [
       "/projects/techops-grand/1.jpg", 
       "/projects/techops-grand/2.jpg",
-      "/projects/techops-grand/3.jpg" /* Matches your folder exactly */
+      "/projects/techops-grand/3.jpg"
     ]
   },
   { 
@@ -518,6 +513,27 @@ export const projectsArchive = [
     gallery: [
       "/projects/times-square/1.jpg", 
       "/projects/times-square/2.jpg"
+    ]
+  },
+  { 
+    id: "aman-greenpark", 
+    name: "Aman Greenpark", 
+    category: "Residential", 
+    year: "2024",
+    location: "Nagpur, India",
+    scale: "Custom Sq. Ft.",
+    status: "Completed",
+    heroStyle: "cinematic",
+    thumbnail: "/projects/aman-greenpark/thumbnail.jpg", // Updated to reflect your new file
+    hero: "/projects/aman-greenpark/hero.jpg",
+    gallery: [
+      "/projects/aman-greenpark/1.jpg", 
+      "/projects/aman-greenpark/2.jpg", 
+      "/projects/aman-greenpark/3.jpg",
+      "/projects/aman-greenpark/4.jpg",
+      "/projects/aman-greenpark/5.jpg", 
+      "/projects/aman-greenpark/6.jpg", 
+      "/projects/aman-greenpark/7.jpg"
     ]
   }
 ];
