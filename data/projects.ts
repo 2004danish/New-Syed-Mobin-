@@ -64,7 +64,7 @@ export const projectsArchive = [
       "/projects/galaxy-imperia/1.jpg", "/projects/galaxy-imperia/2.jpg", "/projects/galaxy-imperia/3.jpg",
       "/projects/galaxy-imperia/4.jpg", "/projects/galaxy-imperia/5.jpg", "/projects/galaxy-imperia/6.jpg",
       "/projects/galaxy-imperia/7.jpg", "/projects/galaxy-imperia/8.jpg", "/projects/galaxy-imperia/9.jpg",
-      "/projects/galaxy-imperia/10.jpg", "/projects/galaxy-imperia/11.jpg"
+      
     ]
   },
   { 
