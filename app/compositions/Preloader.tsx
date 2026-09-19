@@ -42,7 +42,7 @@ export default function Preloader() {
                 initial={{ scale: 0.7, opacity: 0, filter: "blur(20px)" }}
                 animate={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
                 transition={{ duration: 1.4, ease: architecturalEase }}
-                src="/syedmobinlogo.png" 
+                src="/syedmobinlogo2.png" 
                 alt="Syed Mobin Architects Logo" 
                 className="w-full h-full object-contain drop-shadow-[0_15px_30px_rgba(0,0,0,0.04)]"
               />

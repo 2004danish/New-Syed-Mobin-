@@ -33,7 +33,6 @@ export default function Navbar() {
     { name: "Contact", href: "/contact" },
   ];
 
-  // Adding "as const" fixes the TypeScript error for Framer Motion
   const architecturalEase = [0.16, 1, 0.3, 1] as const;
 
   const showDarkText = isScrolled || isMobileMenuOpen || !isHome;
@@ -53,12 +52,11 @@ export default function Navbar() {
           {/* BRANDING SECTION */}
           <Link href="/" className="relative z-50 flex items-center gap-3 md:gap-4 group">
             <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center flex-shrink-0">
+              {/* Removed the 'invert brightness-0' filter so natural colors show! */}
               <img 
-                src="/syedmobinlogo.png" 
+                src="/syedmobinlogo2.png" 
                 alt="Syed Mobin Architects Logo" 
-                className={`w-full h-full object-contain transition-all duration-500 ${
-                  showDarkText ? "filter-none" : "invert brightness-0"
-                }`}
+                className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 

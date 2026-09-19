@@ -22,6 +22,7 @@ export default function AmansSignaturePage() {
           status: project.status
         }}
         heroImage={project.hero}
+        isTallImage={true} /* THIS FIXES THE HERO SCROLL UP ANIMATION */
       />
       
       <ProjectGallery images={project.gallery} /> 
