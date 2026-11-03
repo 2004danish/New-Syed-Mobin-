@@ -1,17 +1,12 @@
-import Hero from "./compositions/Hero";
-import FeaturedProjects from "./compositions/FeaturedProjects";
-import StudioPhilosophy from "./compositions/StudioPhilosophy";
-import Expertise from "./compositions/Expertise";
-import PrincipalArchitect from "./compositions/PrincipalArchitect";
+import Hero from "@/app/compositions/Hero";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="relative w-full bg-white overflow-hidden">
+    <main className="min-h-screen bg-white">
+      {/* 1. Our Premium Cinematic Hero */}
       <Hero />
-      <FeaturedProjects />
-      <StudioPhilosophy />
-      <Expertise />
-      <PrincipalArchitect />
+      
+      {/* You can add your "Featured Projects" or "About Us" sections below this later */}
     </main>
   );
 }
