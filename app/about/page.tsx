@@ -55,7 +55,7 @@ export default function AboutPage() {
         </motion.div>
       </section>
 
-      {/* 2. THE ESTABLISHMENT STATEMENT - Refactored to Two-Column */}
+      {/* 2. THE ESTABLISHMENT STATEMENT */}
       <section className="max-w-[1400px] mx-auto px-6 md:px-12 py-16 md:py-24 border-b border-[#eee]">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_2.5fr] gap-8 md:gap-16 items-start">
           <motion.h4 
@@ -99,16 +99,27 @@ export default function AboutPage() {
               <motion.p variants={staggerItem}>Selected as one of seven architects to represent India at the LafargeHolcim International Conference in Cairo, he has collaborated and learned alongside Pritzker-winning masters like Lord Norman Foster and Francis Kéré.</motion.p>
             </motion.div>
 
-            <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.8 }} transition={{ duration: 1.2, delay: 0.4, ease }} className="relative mt-2 p-6 bg-[#fafafa] group">
+            {/* --- UPDATED QUOTE BLOCK --- */}
+            <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.8 }} transition={{ duration: 1.2, delay: 0.4, ease }} className="relative mt-2 p-6 md:p-8 bg-[#fafafa] group">
               <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-[#ddd] group-hover:bg-[#C1A87D] transition-colors duration-700"></div>
-              <p className="text-[16px] md:text-[18px] font-medium text-[#333] italic leading-[1.6]">"There is nothing superior or inferior, good or bad, right or wrong unless it is built with S.M.A: Sustainable design, Minute detailing, and an Addiction to strive for the best."</p>
+              
+              <p className="text-[16px] md:text-[18px] font-medium text-[#333] italic leading-[1.6] mb-5">
+                "There is nothing superior or inferior, good or bad, right or wrong unless it is built with S.M.A."
+              </p>
+              
+              <div className="flex flex-col gap-2 text-[15px] md:text-[17px] font-light text-[#555] pl-2">
+                <p>&middot; <span className="font-medium text-[#222]">S</span>ustainable design</p>
+                <p>&middot; <span className="font-medium text-[#222]">M</span>inute detailing</p>
+                <p>&middot; <span className="font-medium text-[#222]">A</span>ddiction to strive for the best</p>
+              </div>
+
             </motion.div>
           </div>
 
         </div>
       </section>
 
-      {/* 4. THE APPROACH - Refactored to Two-Column */}
+      {/* 4. THE APPROACH */}
       <section className="max-w-[1400px] mx-auto px-6 md:px-12 py-16 md:py-24 border-b border-[#eee]">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_2.5fr] gap-8 md:gap-16 items-start">
           <motion.h4 
