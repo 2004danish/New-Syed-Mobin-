@@ -1,6 +1,24 @@
 // data/projects.ts
 
 export const projectsArchive = [
+ { 
+    id: "amans-lifestyle", 
+    name: "Aman's Lifestyle", 
+    category: "Residential", 
+    year: "2024",
+    location: "Nagpur, India",
+    scale: "Custom Sq. Ft.",
+    status: "Completed",
+    heroStyle: "cinematic", 
+    thumbnail: "/projects/amans-lifestyle/thumbnail.jpg",
+    hero: "/projects/amans-lifestyle/hero.jpg",
+    gallery: [
+      "/projects/amans-lifestyle/1.jpg", 
+      "/projects/amans-lifestyle/2.JPG", 
+      "/projects/amans-lifestyle/3.JPG",
+      "/projects/amans-lifestyle/4.JPG"
+    ] 
+  },
   { 
     id: "agrawal-house", 
     name: "Agrawal House", 

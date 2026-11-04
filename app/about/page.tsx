@@ -99,7 +99,6 @@ export default function AboutPage() {
               <motion.p variants={staggerItem}>Selected as one of seven architects to represent India at the LafargeHolcim International Conference in Cairo, he has collaborated and learned alongside Pritzker-winning masters like Lord Norman Foster and Francis Kéré.</motion.p>
             </motion.div>
 
-            {/* --- UPDATED QUOTE BLOCK --- */}
             <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.8 }} transition={{ duration: 1.2, delay: 0.4, ease }} className="relative mt-2 p-6 md:p-8 bg-[#fafafa] group">
               <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-[#ddd] group-hover:bg-[#C1A87D] transition-colors duration-700"></div>
               
@@ -119,7 +118,39 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 4. THE APPROACH */}
+      {/* 4. THE CEO */}
+      <section className="max-w-[1400px] mx-auto px-6 md:px-12 py-16 md:py-24 border-b border-[#eee]">
+        {/* Notice the reversed column order here for a beautiful staggered layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_0.8fr] gap-12 lg:gap-16 items-center">
+          
+          <div className="flex flex-col gap-8 order-2 lg:order-1">
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 1.2, ease }}>
+              <h4 className="text-[10px] md:text-[11px] uppercase tracking-[0.3em] font-medium text-[#999] mb-4">Chief Executive Officer</h4>
+              <h2 className="text-[36px] md:text-[48px] font-light tracking-tight text-[#222] leading-none mb-2">Afreen Syed</h2>
+            </motion.div>
+            
+            <motion.div variants={staggerContainer} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.3 }} className="flex flex-col gap-6 text-[15px] md:text-[17px] font-light text-[#555] leading-[1.8]">
+              <motion.p variants={staggerItem}>As the Chief Executive Officer, Afreen is the operational anchor of Syed Mobin Architects. She brings a meticulous approach to practice management, ensuring that the firm's creative ambitions are perfectly aligned with business realities and seamless project execution.</motion.p>
+              <motion.p variants={staggerItem}>Overseeing all day-to-day operations, she bridges the gap between design leadership and technical delivery. Her expertise in operational strategy and client relations enables the multidisciplinary team to focus entirely on what they do best: designing exceptional spaces.</motion.p>
+              <motion.p variants={staggerItem}>Under her guidance, the studio maintains an unwavering commitment to efficiency, precision, and long-term value, transforming complex architectural visions into tangible, enduring realities.</motion.p>
+            </motion.div>
+
+            <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.8 }} transition={{ duration: 1.2, delay: 0.4, ease }} className="relative mt-2 p-6 md:p-8 bg-[#fafafa] group">
+              <div className="absolute right-0 top-0 bottom-0 w-[2px] bg-[#ddd] group-hover:bg-[#C1A87D] transition-colors duration-700"></div>
+              <p className="text-[16px] md:text-[18px] font-medium text-[#333] italic leading-[1.6]">
+                "Great design is only as impactful as its execution. Our operational rigor ensures every creative vision is built to last."
+              </p>
+            </motion.div>
+          </div>
+
+          <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 1.6, ease }} className="relative w-full aspect-[4/5] bg-[#f5f5f5] overflow-hidden group rounded-[2px] order-1 lg:order-2">
+            <Image src="/about/afreensyed.jpg" alt="Afreen Syed - CEO" fill className="object-cover object-center grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-[2s] ease-[0.16,1,0.3,1]" />
+          </motion.div>
+
+        </div>
+      </section>
+
+      {/* 5. THE APPROACH */}
       <section className="max-w-[1400px] mx-auto px-6 md:px-12 py-16 md:py-24 border-b border-[#eee]">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_2.5fr] gap-8 md:gap-16 items-start">
           <motion.h4 
@@ -144,7 +175,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 5. THE STUDIO GALLERY */}
+      {/* 6. THE STUDIO GALLERY */}
       <section className="max-w-[1600px] mx-auto px-6 md:px-12 py-16 md:py-24 border-b border-[#eee]">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 1.2, ease }} className="mb-12 md:mb-16 flex justify-between items-end">
           <h2 className="text-[2.5rem] md:text-[3.5rem] font-light tracking-tight text-[#222]">Inside the Studio</h2>
@@ -156,7 +187,7 @@ export default function AboutPage() {
           
           {[
             { src: "/about/conference.jpg", label: "Conference Room", colSpan: false, heightClass: "h-[40vh] md:h-[50vh]" },
-            { src: "/about/manager-cabin.jpg", label: "Manager Cabin", colSpan: false, heightClass: "h-[40vh] md:h-[50vh]" },
+            { src: "/about/ceo-office.jpg", label: "CEO Office", colSpan: false, heightClass: "h-[40vh] md:h-[50vh]" },
             { src: "/about/principal-architect-cabin.jpg", label: "Principal Architect Cabin", colSpan: true, heightClass: "h-[40vh] md:h-[60vh]" },
             { src: "/about/reception-cum-waiting.jpg", label: "Reception Area", colSpan: false, heightClass: "h-[40vh] md:h-[50vh]" },
             { src: "/about/vip-lounge.jpg", label: "VIP Lounge", colSpan: false, heightClass: "h-[40vh] md:h-[50vh]" }
@@ -183,7 +214,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 6. CALL TO ACTION & PORTFOLIO DOWNLOAD */}
+      {/* 7. CALL TO ACTION & PORTFOLIO DOWNLOAD */}
       <section className="max-w-[1000px] mx-auto px-6 md:px-12 pt-20 pb-8 text-center">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
