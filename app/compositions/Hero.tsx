@@ -11,8 +11,8 @@ const heroSlides = [
     title: "Aman's Lifestyle",
     category: "Residential",
     image: "/hero-images/1.jpg", 
-    href: "/work/amans-signature",
-    objectPosition: "center top" // Keeps the roof of the tall building in frame
+    href: "/work/amans-lifestyle", // Updated to the new dynamic route ID
+    objectPosition: "center top" 
   },
   {
     id: "kala-villa",
@@ -20,7 +20,7 @@ const heroSlides = [
     category: "Interior Design",
     image: "/hero-images/2.jpg", 
     href: "/work/kala-villa",
-    objectPosition: "center center" // Perfect centering for the interior shot
+    objectPosition: "center center" 
   },
   {
     id: "oak-sterling-vista",
@@ -43,11 +43,8 @@ export default function Hero() {
   });
 
   // 2. Define the exact animations based on scroll position
-  // Background moves down slightly (parallax)
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
-  // Text fades out quickly as you scroll down
   const contentOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-  // Text glides up slightly as you scroll down
   const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
 
   useEffect(() => {
@@ -60,7 +57,7 @@ export default function Hero() {
   return (
     <section ref={containerRef} className="relative w-full h-[100dvh] overflow-hidden bg-[#111]">
       
-      {/* CINEMATIC BACKGROUNDS - Now wrapped in a parallax motion div */}
+      {/* CINEMATIC BACKGROUNDS */}
       <motion.div style={{ y: backgroundY }} className="absolute inset-0 w-full h-full z-0">
         {heroSlides.map((slide, index) => (
           <div key={slide.id} className="absolute inset-0 w-full h-full">
@@ -91,7 +88,7 @@ export default function Hero() {
         ))}
       </motion.div>
 
-      {/* DYNAMIC TEXT OVERLAYS - Now wrapped in a fade/glide motion div */}
+      {/* DYNAMIC TEXT OVERLAYS */}
       <motion.div 
         style={{ opacity: contentOpacity, y: contentY }} 
         className="absolute inset-0 z-10 flex flex-col justify-end pb-12 md:pb-20"
