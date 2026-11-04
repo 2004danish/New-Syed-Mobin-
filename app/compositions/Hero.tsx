@@ -7,20 +7,20 @@ import Link from "next/link";
 
 const heroSlides = [
   {
-    id: "kala-villa",
-    title: "Kala Villa",
-    category: "Interior Design",
-    image: "/hero-images/1.jpg", 
-    href: "/work/kala-villa",
-    objectPosition: "center center"
-  },
-  {
     id: "amans-lifestyle",
     title: "Aman's Lifestyle",
     category: "Residential",
-    image: "/hero-images/2.jpg", 
+    image: "/hero-images/1.jpg", 
     href: "/work/amans-signature",
-    objectPosition: "center top" 
+    objectPosition: "center top" // Keeps the roof of the tall building in frame
+  },
+  {
+    id: "kala-villa",
+    title: "Kala Villa",
+    category: "Interior Design",
+    image: "/hero-images/2.jpg", 
+    href: "/work/kala-villa",
+    objectPosition: "center center" // Perfect centering for the interior shot
   },
   {
     id: "oak-sterling-vista",
