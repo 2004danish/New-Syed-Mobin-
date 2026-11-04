@@ -10,15 +10,17 @@ const heroSlides = [
     id: "amans-lifestyle",
     title: "Aman's Lifestyle",
     category: "Residential",
-    image: "/hero-images/1.jpg", 
-    href: "/work/amans-lifestyle", // Updated to the new dynamic route ID
+    // Points to the new specific filename
+    image: "/hero-images/amans-hero.jpg", 
+    href: "/work/amans-lifestyle",
     objectPosition: "center top" 
   },
   {
     id: "kala-villa",
     title: "Kala Villa",
     category: "Interior Design",
-    image: "/hero-images/2.jpg", 
+    // Points to the new specific filename
+    image: "/hero-images/kala-hero.jpg", 
     href: "/work/kala-villa",
     objectPosition: "center center" 
   },
@@ -26,7 +28,8 @@ const heroSlides = [
     id: "oak-sterling-vista",
     title: "Oak Sterling Vista",
     category: "Architecture",
-    image: "/hero-images/3.jpg", 
+    // Points to the new specific filename
+    image: "/hero-images/oak-hero.jpg", 
     href: "/work/oak-sterling-vista",
     objectPosition: "center center"
   }
@@ -35,14 +38,12 @@ const heroSlides = [
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
   
-  // 1. Setup the Scroll Tracker
   const containerRef = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end start"]
   });
 
-  // 2. Define the exact animations based on scroll position
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
   const contentOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
   const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
