@@ -65,13 +65,25 @@ export default function Footer() {
             <h3 className="text-[11px] font-medium uppercase tracking-[0.3em] text-[#999] mb-6">Social</h3>
             <ul className="flex flex-col gap-3 text-[14px] font-light text-[#555] items-center">
               <li>
-                <a href="#" className="hover:text-[#C1A87D] transition-colors duration-500 relative group overflow-hidden w-fit pb-1 block">
+                {/* Updated Instagram Link */}
+                <a 
+                  href="https://www.instagram.com/syedmobinarchitects?utm_source=ig_web_button_share_sheet&exln=ZDNlZDc0MzIxNw==" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:text-[#C1A87D] transition-colors duration-500 relative group overflow-hidden w-fit pb-1 block"
+                >
                   Instagram
                   <span className="absolute left-0 bottom-0 w-full h-[1px] bg-current transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]" />
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#C1A87D] transition-colors duration-500 relative group overflow-hidden w-fit pb-1 block">
+                {/* Updated LinkedIn Link */}
+                <a 
+                  href="https://in.linkedin.com/company/syed-mobin-architects-india" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:text-[#C1A87D] transition-colors duration-500 relative group overflow-hidden w-fit pb-1 block"
+                >
                   LinkedIn
                   <span className="absolute left-0 bottom-0 w-full h-[1px] bg-current transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]" />
                 </a>
@@ -109,7 +121,7 @@ export default function Footer() {
             <h3 className="text-[11px] font-medium uppercase tracking-[0.3em] text-[#999] mb-6">Info</h3>
             <address className="flex flex-col gap-3 text-[14px] font-light text-[#555] not-italic leading-relaxed items-center">
               <span>301, P - 7/2, Krishna Style Homes<br />Nagpur, Maharashtra 440013</span>
-              <Link href="/studio" className="hover:text-[#C1A87D] transition-colors duration-500 relative group overflow-hidden w-fit pb-1 mt-1">
+              <Link href="/about" className="hover:text-[#C1A87D] transition-colors duration-500 relative group overflow-hidden w-fit pb-1 mt-1">
                 About Us
                 <span className="absolute left-0 bottom-0 w-full h-[1px] bg-current transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]" />
               </Link>
