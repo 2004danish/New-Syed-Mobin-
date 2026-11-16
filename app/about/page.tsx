@@ -84,17 +84,17 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1fr] gap-12 lg:gap-16 items-center">
           
           <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 1.6, ease }} className="relative w-full aspect-[4/5] bg-[#f5f5f5] overflow-hidden group rounded-[2px]">
-            <Image src="/about/mobinsyed.jpg" alt="Syed Mobin - Principal Architect" fill className="object-cover object-top grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-[2s] ease-[0.16,1,0.3,1]" />
+            <Image src="/about/mobinsyed.jpg" alt="Mobin Syed - Principal Architect" fill className="object-cover object-top grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-[2s] ease-[0.16,1,0.3,1]" />
           </motion.div>
 
           <div className="flex flex-col gap-8">
             <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 1.2, ease }}>
               <h4 className="text-[10px] md:text-[11px] uppercase tracking-[0.3em] font-medium text-[#999] mb-4">Principal Architect</h4>
-              <h2 className="text-[36px] md:text-[48px] font-light tracking-tight text-[#222] leading-none mb-2">Syed Mobin</h2>
+              <h2 className="text-[36px] md:text-[48px] font-light tracking-tight text-[#222] leading-none mb-2">Mobin Syed</h2>
             </motion.div>
             
             <motion.div variants={staggerContainer} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.3 }} className="flex flex-col gap-6 text-[15px] md:text-[17px] font-light text-[#555] leading-[1.8]">
-              <motion.p variants={staggerItem}>With over two decades of practice in Central India, Syed Mobin has established himself as a highly respected architectural voice. His work impeccably blends spatial awareness with structural design, showcasing a lifelong passion that began in his early college days.</motion.p>
+              <motion.p variants={staggerItem}>With over two decades of practice in Central India, Mobin Syed has established himself as a highly respected architectural voice. His work impeccably blends spatial awareness with structural design, showcasing a lifelong passion that began in his early college days.</motion.p>
               <motion.p variants={staggerItem}>From creating art installations out of scrap and winning the national HUDCO Trophy, to earning the International GABA Award for a residential villa crafted from reclaimed materials, his dedication to the craft has never wavered. Having commissioned over 100 projects, his work has been widely celebrated and published across the industry.</motion.p>
               <motion.p variants={staggerItem}>Selected as one of seven architects to represent India at the LafargeHolcim International Conference in Cairo, he has collaborated and learned alongside Pritzker-winning masters like Lord Norman Foster and Francis Kéré.</motion.p>
             </motion.div>
@@ -120,17 +120,16 @@ export default function AboutPage() {
 
       {/* 4. THE CEO */}
       <section className="max-w-[1400px] mx-auto px-6 md:px-12 py-16 md:py-24 border-b border-[#eee]">
-        {/* Notice the reversed column order here for a beautiful staggered layout */}
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_0.8fr] gap-12 lg:gap-16 items-center">
           
           <div className="flex flex-col gap-8 order-2 lg:order-1">
             <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 1.2, ease }}>
-              <h4 className="text-[10px] md:text-[11px] uppercase tracking-[0.3em] font-medium text-[#999] mb-4">Chief Executive Officer</h4>
-              <h2 className="text-[36px] md:text-[48px] font-light tracking-tight text-[#222] leading-none mb-2">Afreen Syed</h2>
+              <h4 className="text-[10px] md:text-[11px] uppercase tracking-[0.3em] font-medium text-[#999] mb-4">CEO</h4>
+              <h2 className="text-[36px] md:text-[48px] font-light tracking-tight text-[#222] leading-none mb-2">Afrin Syed</h2>
             </motion.div>
             
             <motion.div variants={staggerContainer} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.3 }} className="flex flex-col gap-6 text-[15px] md:text-[17px] font-light text-[#555] leading-[1.8]">
-              <motion.p variants={staggerItem}>As the Chief Executive Officer, Afreen is the operational anchor of Syed Mobin Architects. She brings a meticulous approach to practice management, ensuring that the firm's creative ambitions are perfectly aligned with business realities and seamless project execution.</motion.p>
+              <motion.p variants={staggerItem}>As the CEO, Afrin is the operational anchor of Syed Mobin Architects. She brings a meticulous approach to practice management, ensuring that the firm's creative ambitions are perfectly aligned with business realities and seamless project execution.</motion.p>
               <motion.p variants={staggerItem}>Overseeing all day-to-day operations, she bridges the gap between design leadership and technical delivery. Her expertise in operational strategy and client relations enables the multidisciplinary team to focus entirely on what they do best: designing exceptional spaces.</motion.p>
               <motion.p variants={staggerItem}>Under her guidance, the studio maintains an unwavering commitment to efficiency, precision, and long-term value, transforming complex architectural visions into tangible, enduring realities.</motion.p>
             </motion.div>
@@ -144,7 +143,7 @@ export default function AboutPage() {
           </div>
 
           <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 1.6, ease }} className="relative w-full aspect-[4/5] bg-[#f5f5f5] overflow-hidden group rounded-[2px] order-1 lg:order-2">
-            <Image src="/about/afreensyed.jpg" alt="Afreen Syed - CEO" fill className="object-cover object-center grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-[2s] ease-[0.16,1,0.3,1]" />
+            <Image src="/about/afreensyed.jpg" alt="Afrin Syed - CEO" fill className="object-cover object-center grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-[2s] ease-[0.16,1,0.3,1]" />
           </motion.div>
 
         </div>

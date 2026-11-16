@@ -59,7 +59,7 @@ export default function RecognitionPage() {
             className="flex flex-col gap-6 text-[17px] md:text-[20px] font-light text-[#555] leading-[1.9]"
           >
             <p>
-              Syed Mobin's innovative designs and commitment to sustainability have garnered global recognition. He was selected as one of only seven representatives from India at the LafargeHolcim International Conference in Cairo, Egypt.
+              Mobin Syed's innovative designs and commitment to sustainability have garnered global recognition. He was selected as one of only seven representatives from India at the LafargeHolcim International Conference in Cairo, Egypt.
             </p>
             <p>
               This prestigious event allowed him to collaborate and learn directly from esteemed Pritzker Architecture Prize-winning masters like Lord Norman Foster, Francis Kéré, and Anne Lacaton, further enriching the firm's architectural perspective on a global scale.
@@ -188,7 +188,7 @@ export default function RecognitionPage() {
             className="flex flex-col gap-6 text-[17px] md:text-[20px] font-light text-[#555] leading-[1.9]"
           >
             <p>
-              Beyond architectural achievements, Syed Mobin is a founder member of the <strong>Kadu Neem Foundation</strong>, a social initiative with over 150 members from diverse fields.
+              Beyond architectural achievements, Mobin Syed is a founder member of the <strong>Kadu Neem Foundation</strong>, a social initiative with over 150 members from diverse fields.
             </p>
             <p>
               The foundation's mission is to conserve heritage, plant trees, and propel Nagpur towards becoming India's number one Green City. This initiative reflects the firm's holistic approach to improving both the built environment and the community at large.
